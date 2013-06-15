@@ -10,3 +10,11 @@
 *.lai
 *.la
 *.a
+
+# vim swap files
+*.swp
+
+# build directories
+bin/
+build/
+include/
