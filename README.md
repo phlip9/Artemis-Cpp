@@ -3,9 +3,6 @@ Artemis C++
 
 A C++ port of [Artemis Entity System Framework](http://gamadu.com/artemis/tutorial.html).
 
-The port was orignially written by [Sidar Talei](https://bitbucket.org/stalei/artemiscpp/src), in which he used several C++11 features such as deleted function, variadic templates, nullptr, etc…
-We wanted the framework to be portable, so we removed all C++11 feature usages.
-
 ### PORTED CLASSES
 
 - Component
@@ -30,7 +27,13 @@ We wanted the framework to be portable, so we removed all C++11 feature usages.
 - World
 - Bag
 
-### EXAMPLE
+### BUILD
+
+ 1. Install the latest version of **cmake**.
+ 2. Run **build.sh**.
+ 3. Add the binary *./bin/libartemis.a* and header files *./include/* to your project.
+
+### EXAMPLES
 
 `VelocityComponent` and `PositionComponent`.
 
@@ -122,6 +125,9 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
+
+More detailed examples (in Java) can be found here: [http://gamadu.com/artemis/](http://gamadu.com/artemis/)
+
 ### LOGS
 
 - Dec 10, 2012:
@@ -136,7 +142,7 @@ which will lead to memory violation when a World is deleted and a new one is cre
 - Sept 12, 2012:
 	- Removed all C++11 feature usages.
 
-### LISENCE
+### LICENSE
 
 Copyright 2011 GAMADU.COM. All rights reserved.
 
